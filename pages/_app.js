@@ -1,12 +1,24 @@
 
 import '@/styles/globals.css';
-import Navbar from '@/components/Navbar';
-export default function App({ Component, pageProps }) {
+
+import "@fontsource/poppins";
+import "@fontsource/montez";
+import "@fontsource/righteous";
+
+
+
+
+export default function App({ Component,
+  pageProps: { session, ...pageProps },
+}) {
   return (
-    <>
+   
     
-    <Component {...pageProps} />
-    </>
+  
+    <Component {...pageProps}  />
+  
+   
+
     
   );
 }
